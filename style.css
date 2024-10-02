@@ -1,0 +1,89 @@
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkGray: hsl(0, 0%, 59%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../images/bg-pattern-bottom.svg) bottom -600px right -150px no-repeat, url(../images/bg-pattern-top.svg) top -500px left -200px no-repeat;  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--darkCyan);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 400px;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main .card-bg {
+  display: block;
+  min-width: 100%;
+  width: 400px;
+}
+main .content {
+  text-align: center;
+}
+main .person-bg {
+  border: 5px solid white;
+  border-radius: 50%;
+  position: relative;
+  top: -50px;
+}
+main .person-info {
+  margin-top: -35px;
+}
+main .person-info h1 {
+  font-size: 20px;
+  color: var(--veryDarkDesaturatedBlue);
+}
+main .person-info h1 span {
+  color: var(--darkGrayishBlue);
+  margin-left: 7px;
+  font-weight: 400;
+}
+main .person-info p {
+  color: var(--DarkGray);
+  padding-top: 7px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+hr {
+  border: none;
+  border: 1px solid hsla(0, 0%, 59%, 0.2);
+}
+main .reaction {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+main .reaction div { 
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+main .reaction div span:first-of-type {
+  font-weight: 700;
+  color: var(--veryDarkDesaturatedBlue);
+}
+main .reaction div span:last-of-type {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--DarkGray);
+  font-weight: 500;
+}
+@media (max-width: 375px) {
+  main {
+    width: 370px;
+    margin: 10px;
+  }
+}
